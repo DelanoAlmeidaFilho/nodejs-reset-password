@@ -1,20 +1,11 @@
-# Template-node-express
+Node JS project for email sending and password recovery
 
+## entity relationship diagram:
 
-Base template to automate nodejs projects using express with code formatting tools, error handling, typing and organization suggestion of project folders. For the purpose of creating a code standardization.
-
-## Install the project's development dependencies:
-
-```javascript
-
-    npm run getDevDependencies
-```
-
-## Install the project's dependencies:
-
-```javascript
-
-    npm run getDependencies
+```mermaid
+erDiagram
+    USERS }|--o{ REFRESH_TOKENS : contains
+    USERS }|--o{ RESET_PASSWORD_TOKENS : contains
 ```
 
 ## Executing the Project
@@ -26,8 +17,16 @@ To run the project, use the following command:
     npm run dev
 ```
 
-This will start the Node.js server using Express.
+## dependencies
 
-## Prettier and ESLint
+-   [Prisma](https://www.prisma.io/)
+-   [JWT](https://jwt.io)
+-   [BCrypt](https://www.npmjs.com/package/bcrypt)
+-   [JsonWebToken](www.npmjs.com/package/jsonwebtoken)
+-   [tsyringe](www.npmjs.com/package/tsyringe)
+-   [Celebrate](www.npmjs.com/package/celebrate)
+-   [DayJs](www.npmjs.com/package/dayjs)
+-   [Handlebars](www.npmjs.com/package/handlebars)
+-   [nodemailer](www.npmjs.com/package/nodemailer)
 
-This project uses Prettier and ESLint for code standardization. Prettier is a code formatting tool that helps you maintain a consistent style throughout your project, while ESLint is a static analysis tool that helps you identify and fix code issues.
+<h3 align="center">created by  Delano Almeida filho </h3>
